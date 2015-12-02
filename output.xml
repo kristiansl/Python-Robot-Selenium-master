@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151202 12:25:24.467" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<robot generated="20151202 13:40:11.147" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/kristianmeier/Desktop/dev/Python-Robot-Selenium-master/sample_test.robot" id="s1" name="Sample Test">
 <test id="s1-t1" name="Example of connecting to Sauce via Robot Framework">
 <kw type="setup" name="Open test browser">
@@ -11,199 +11,60 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20151202 12:25:24.585" level="INFO">Opening browser 'firefox' to base url 'about:' through remote server at 'http://kristianmeiersl:5654145f-77f1-49aa-94d2-428831e575a9@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20151202 12:25:32.803" starttime="20151202 12:25:24.584"></status>
+<msg timestamp="20151202 13:40:11.271" level="INFO">Opening browser 'chrome' to base url 'about:' through remote server at 'http://kristianmeiersl:5654145f-77f1-49aa-94d2-428831e575a9@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20151202 13:40:14.347" starttime="20151202 13:40:11.270"></status>
 </kw>
-<status status="PASS" endtime="20151202 12:25:32.803" starttime="20151202 12:25:24.583"></status>
+<status status="PASS" endtime="20151202 13:40:14.348" starttime="20151202 13:40:11.270"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>https://saucelabs.com/login</arg>
 </arguments>
-<msg timestamp="20151202 12:25:32.804" level="INFO">Opening url 'https://saucelabs.com/login'</msg>
-<status status="PASS" endtime="20151202 12:25:34.620" starttime="20151202 12:25:32.804"></status>
+<msg timestamp="20151202 13:40:14.349" level="INFO">Opening url 'https://saucelabs.com/login'</msg>
+<status status="PASS" endtime="20151202 13:40:15.883" starttime="20151202 13:40:14.349"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
-<arg>id=username</arg>
+<arg>name=username</arg>
 </arguments>
-<msg timestamp="20151202 12:25:35.700" level="INFO">&lt;!DOCTYPE html&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="login" class="login ng-scope wf-proximanova-i1-active wf-proximanova-i3-active wf-proximanova-i4-active wf-proximanova-i7-active wf-proximanova-n1-active wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-n7-active wf-active"&gt;&lt;head&gt;&lt;style type="text/css"&gt;.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}&lt;/style&gt;&lt;style type="text/css"&gt;@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}&lt;/style&gt;
-        &lt;meta charset="utf-8" /&gt;
-        &lt;script async="" defer="true" src="https://static.olark.com/jsclient/jquery.js"&gt;&lt;/script&gt;&lt;script async="" defer="true" src="https://api.olark.com/2.0/sites/3998-799-10-8749/visits?_callback=_olark_callback_0b956f04_b9da_4fce_9d31_5b38e9db1fb0&amp;amp;_method=POST&amp;amp;_data=%7B%22conversation_id%22%3A%22Pa1DhYmD3K9pTleM9C8TH67OAPJpMHJD%22%2C%22cache%22%3A%220.3605446876358338%22%7D"&gt;&lt;/script&gt;&lt;script type="text/javascript" async="" src="//munchkin-cdn.marketo.net/150/munchkin.js"&gt;&lt;/script&gt;&lt;base href="/" /&gt;
-        &lt;title&gt;Sauce Labs | Login&lt;/title&gt;
-        &lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /&gt;
-        &lt;link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:300" /&gt;
-        &lt;link href="https://cdn1.saucelabs.com/styleguide/styles/styleguide.15440bd0ea7d.css" rel="stylesheet" /&gt;
-        
-&lt;link href="https://cdn1.saucelabs.com/panel/styles/panel.6cd4777ec04f.css" rel="stylesheet" /&gt;
-
-
-
-
-        &lt;script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" async="" src="https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" async="" src="https://widget.intercom.io/widget/f55cca9276e33204925e4afcd515ab7d1555a3d0"&gt;&lt;/script&gt;&lt;script type="text/javascript" async="" src="//s3.amazonaws.com/ki.js/59598/dn2.js"&gt;&lt;/script&gt;&lt;script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K9K459"&gt;&lt;/script&gt;&lt;script type="text/javascript" id="analytics-js" async="" src="https://cdn.segment.io/analytics.js/v1/13rd58d6s3/analytics.min.js"&gt;&lt;/script&gt;&lt;script src="//use.typekit.net/emr4xze.js" async=""&gt;&lt;/script&gt;&lt;script&gt;
-        (function(d) {
-            var config = {
-            kitId: 'emr4xze',
-            scriptTimeout: 3000
-            },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&amp;amp;&amp;amp;a!="complete"&amp;amp;&amp;amp;a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-        &lt;/script&gt;
-        
-
-
-
-&lt;script type="text/javascript"&gt;
-    window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i&amp;lt;window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
-    window.analytics.load("13rd58d6s3");
-&lt;/script&gt;
-
-&lt;script&gt;
-    
-        window.analytics.page(null, null, null, function(){}, {integrations: {'Intercom': false}});
-    
-&lt;/script&gt;&lt;style type="text/css"&gt;.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}&lt;/style&gt;&lt;link rel="stylesheet" href="https://use.typekit.net/c/af7560/1w;proxima-nova,2,cdc:T:i1,fsR:T:i3,cdh:T:i4,cdX:T:i7,cdb:T:n1,cdj:T:n3,cdg:T:n4,g8x:T:n7/d?3bb2a6e53c9684ffdc9a98f51f5b2a62053d58e8046fc56e4d23f380cd49b6081ecb06a39e6dd060cffe9d26c93048b7a728e887ebbd82a5a0bde2a32e937fe216b1f7ae3f9ab0f556adee2fb05ba238b22166693ea5033620d6c48f2eb932a8032ad05520da64e90a8d1219aacbb22f8d5c388167dc0bc15cad7a59eae73f16082e28645c629fafc48d6c4dabcfc45e15d5f3aab358cd6ae9cbac12e2e105452358e1ffbb9ceecfd8316fb47ffa08c9d395814d643d600a83c185fa21770c51d5445cb63edfe1a5cff7b3de6617093ba04daf3cfe5dba21848e6bb9af0d02739e259a382f653f46fe5a76" media="all" /&gt;
-
-    &lt;script type="text/javascript" async="" src="https://1d5ef9e9369608f625a8-878b10192d4a956595449977ade9187d.ssl.cf2.rackcdn.com/tracker2.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"&gt;&lt;/script&gt;&lt;script async="" src="//cdn.captora.com/js/saucelabs.com/pixel-config.js"&gt;&lt;/script&gt;&lt;script src="https://static.olark.com/jsclient-bucket3/application2.js?v=1446745187260" async="" defer="defer" data-cfasync="false"&gt;&lt;/script&gt;&lt;style type="text/css"&gt;.olark-key,#hbl_code,#olark-data{display: none !important;}&lt;/style&gt;&lt;link id="habla_style_div" type="text/css" rel="stylesheet" href="https://static.olark.com/css/e/a/eaf439221ce29ed3acc3aaa9b5cc58b4.css?https" /&gt;&lt;style type="text/css"&gt;@media print {#habla_beta_container_do_not_rely_on_div_classes_or_names {display: none !important}}&lt;/style&gt;&lt;/head&gt;
-
-    &lt;body&gt;&lt;div style="display: none;" id="olark"&gt;&lt;olark&gt;&lt;iframe frameborder="0" id="olark-loader"&gt;&lt;/iframe&gt;&lt;/olark&gt;&lt;/div&gt;
-        
-
-&lt;h1 class="sauce-logo-login"&gt;
-  &lt;a href="/home"&gt;Sauce Labs&lt;/a&gt;
-&lt;/h1&gt;
-
-&lt;div ng-controller="loginController as login" class="login-page ng-scope"&gt;
-  &lt;div class="login-form-wrapper"&gt;
-    &lt;div class="row"&gt;
-      &lt;h3 class="login-title"&gt;Sign In&lt;/h3&gt;
-    &lt;/div&gt;
-
-    &lt;div class="row"&gt;
-      &lt;form ng-submit="login.onSubmit($event)" novalidate="" method="post" action="/beta/login" class="login-form ng-pristine ng-invalid ng-invalid-required" name="form"&gt;
-        &lt;input type="hidden" value="mx3iVfUrBsJWBA0ZELKBBmrokHgZnKLV" name="csrfmiddlewaretoken" /&gt;
-        &lt;input type="hidden" value="" name="redirect_to" /&gt;
-
-        
-
-        &lt;section ng-class="{ 'alerts-visible': login.errors.length &amp;gt; 0 }" class="form-group alerts"&gt;
-          &lt;!-- ngRepeat: error in login.errors --&gt;
-        &lt;/section&gt;
-
-        &lt;div ng-class="{ 'has-error': login.isFormInputValid(form.username) }" class="form-group"&gt;
-          &lt;!--[if lte IE 9]&gt;
-            &lt;label for="username"&gt;Username or email address&lt;/label&gt;
-          &lt;![endif]--&gt;
-          &lt;input type="text" required="" ng-model="login.data.username" placeholder="Username or email address" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="username" /&gt;
-        &lt;/div&gt;
-
-        &lt;div ng-class="{ 'has-error': login.isFormInputValid(form.password) }" class="form-group form-group-password"&gt;
-          &lt;!--[if lte IE 9]&gt;
-            &lt;label for="password"&gt;Password&lt;/label&gt;
-          &lt;![endif]--&gt;
-          &lt;input type="password" required="" ng-model="login.data.password" placeholder="Password" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="password" /&gt;
-          &lt;a tabindex="-1" class="forgot-link" href="/send-password-reset"&gt;Forgot?&lt;/a&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group login-form-buttons row"&gt;
-          &lt;div class="col-sm-6"&gt;
-            &lt;label class="remember"&gt;
-              &lt;input type="checkbox" ng-model="login.data.remember_me" name="remember_me" class="ng-pristine ng-untouched ng-valid" /&gt;Remember Me
-            &lt;/label&gt;
-            &lt;!--&lt;button class="btn btn-primary"&gt;
-              &lt;icon name="btn-icn-github"&gt;&lt;/icon&gt; Sign in with GitHub
-            &lt;/button&gt;--&gt;
-          &lt;/div&gt;
-          &lt;div class="col-sm-6"&gt;
-            &lt;button defer="login.deferLoading" class="btn btn-action ng-isolate-scope" id="submit" type="submit"&gt;
-              Sign In &lt;icon name="btn-icn-arrow-right" class="ng-isolate-scope"&gt;&lt;svg viewBox="0 0 13 8" height="8" width="13" preserveAspectRatio="xMidYMax meet" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon"&gt;
-  &lt;defs&gt;
-    &lt;style&gt;
-
-      .cls-2 {
-        fill: #000000;
-      }
-    &lt;/style&gt;
-  &lt;/defs&gt;
-  &lt;path fill-rule="evenodd" class="cls-2" id="path-1" d="M12.990,4.000 C12.990,4.000 7.000,7.993 7.000,7.993 C7.000,7.993 7.000,5.000 7.000,5.000 C7.000,5.000 -0.000,5.000 -0.000,5.000 C-0.000,5.000 -0.000,3.000 -0.000,3.000 C-0.000,3.000 7.000,3.000 7.000,3.000 C7.000,3.000 7.000,0.007 7.000,0.007 C7.000,0.007 12.990,4.000 12.990,4.000 Z"/&gt;
-&lt;/svg&gt;&lt;/icon&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;p class="form-group create-account"&gt;
-          New to Sauce Labs? &lt;a href="/signup/trial" class="account-create"&gt;Create an Account&lt;/a&gt;
-        &lt;/p&gt;
-      &lt;/form&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-        &lt;div growl="" class="ng-isolate-scope"&gt;&lt;div ng-class="wrapperClasses()" class="growl-container growl-fixed top-right"&gt;&lt;!-- ngRepeat: message in growlMessages.directives[referenceId].messages --&gt;&lt;/div&gt;&lt;/div&gt;
-
-        &lt;script src="https://cdn1.saucelabs.com/bower_components/highcharts-release/adapters/standalone-framework.e10c05394817.js"&gt;&lt;/script&gt;
-        &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
-        &lt;script&gt;window.angular || document.write('&amp;lt;script src="bower_components/angular/angular.min.js"&amp;gt;\x3C/script&amp;gt;')&lt;/script&gt;
-
-        
-          
-
-        &lt;script type="text/javascript"&gt;
-  var _kiq = _kiq || [];
-  (function(){
-    setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
-    s.async = true; s.src = '//s3.amazonaws.com/ki.js/59598/dn2.js'; f.parentNode.insertBefore(s, f);
-    }, 1);
-  })();
-&lt;/script&gt;
-
-        &lt;!-- Google Tag Manager --&gt;
-&lt;noscript&gt;&amp;lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-K9K459"
-height="0" width="0" style="display:none;visibility:hidden"&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/noscript&gt;
-&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&amp;amp;l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K9K459');&lt;/script&gt;
-&lt;!-- End Google Tag Manager --&gt;
-        
-
-        
-&lt;!-- async preload of bundles required for the panel --&gt;
-&lt;script async="" src="https://cdn1.saucelabs.com/common/js/common.8f8c06582c5e.js"&gt;&lt;/script&gt;
-&lt;script async="" src="https://cdn1.saucelabs.com/panel/js/panel.a9a151c22c60.js"&gt;&lt;/script&gt;
-&lt;!-- configure and run login module --&gt;
-&lt;script src="https://cdn1.saucelabs.com/panel/js/login.931530148305.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-  angular.module('login')
-    .constant('settings', {
-      username: '',
-      staticUrl: 'https://cdn1.saucelabs.com/',
-      csrfToken: 'mx3iVfUrBsJWBA0ZELKBBmrokHgZnKLV'
-    })
-    .run(['$rootScope', 'settings', function($rootScope, settings) {
-      $rootScope.settings = settings;
-    }]);
-&lt;/script&gt;
-
-    
-
-&lt;script type="text/javascript" id=""&gt;window._cloudAmp=window._cloudAmp||{};_cloudAmp.forms=[];(function(){document.getElementsByTagName("script");var a=document.createElement("script"),c=document.getElementsByTagName("head"),b=document.location.protocol;a.type="text/javascript";a.async=!0;a.src=b+"//"+("http:"===b?"trk.cloudamp.net":"1d5ef9e9369608f625a8-878b10192d4a956595449977ade9187d.ssl.cf2.rackcdn.com")+"/tracker2.js";c[0].appendChild(a)})();&lt;/script&gt;&lt;script type="text/javascript" id="cp_tracker" src="//cdn.captora.com/js/track.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" id=""&gt;(function(){function b(){!1===c&amp;amp;&amp;amp;(c=!0,Munchkin.init("468-XBT-687",{asyncOnly:!0}))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&amp;amp;&amp;amp;"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();&lt;/script&gt;&lt;div style="display: none; visibility: hidden;"&gt;
-&lt;script type="text/javascript"&gt;window.olark||function(c){var b=window,l=document,m="https:"==b.location.protocol?"https:":"http:",e=c.name,f="load",g="addEventListener";(function(){function h(){a.P(f);b[e](f)}b[e]=function(){(a.s=a.s||[]).push(arguments)};for(var a=b[e]._={},d=c.methods.length;d--;)(function(a){b[e][a]=function(){b[e]("call",a,arguments)}})(c.methods[d]);a.l=c.loader;a.i=arguments.callee;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};b[g]?b[g](f,h,!1):b.attachEvent("on"+f,h);a.P(1);var d=l.createElement("script"),
-k=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=!0;d.src=m+"//"+a.l;k.parentNode.insertBefore(d,k);a.P(2)})()}({loader:function(c){return"static.olark.com/jsclient/loader1.js?ts\x3d"+(c?c[1]:+new Date)}(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]});olark.identify("3998-799-10-8749");&lt;/script&gt;
-&lt;/div&gt;&lt;span style="display: none;"&gt;&lt;iframe style="display: none !important;" id="_olark_framesocket21368" src="https://static.olark.com/jsclient-bucket3/storage.html?v=1446745187260#TK4005130717592431"&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;div id="habla_beta_container_do_not_rely_on_div_classes_or_names" class="habla-browser-firefox habla-desktop olrk-noquirks"&gt;&lt;div id="hbl_operator_state_div" class="olrk-away"&gt;&lt;div id="hbl_region" class="olrk-normal"&gt;&lt;div id="habla_window_state_div" class=" olrk-state-compressed"&gt;&lt;div id="habla_window_div" style="margin: 0px 20px; bottom: 0px; right: 0px; display: none; position: fixed;" class="habla_window_div_base hbl_pal_main_width olrk-fixed-bottom olrk-fixed-right "&gt;&lt;div id="habla_compressed_div" style="display: none;"&gt;&lt;/div&gt;&lt;div id="habla_panel_div" style="display: none;" class="habla_panel_border hbl_pal_main_bg hbl_pal_panel_border hbl_pal_main_font_family hbl_pal_main_font_size "&gt;&lt;div id="habla_both_div" style="display: none;"&gt;&lt;div id="habla_topbar_div" class="habla_topbar_div_normal habla_topbar_clickable hbl_pal_title_fg hbl_pal_title_bg habla_topbar_div_expanded "&gt;&lt;a id="habla_sizebutton_a" class="habla_button habla_button_a_normal hbl_pal_header_font_size hbl_pal_main_font_family hbl_pal_button_bg hbl_pal_button_fg "&gt;^&lt;/a&gt;&lt;a id="habla_oplink_a" class="habla_oplink_a_normal hbl_pal_header_font_size hbl_pal_title_fg "&gt;Contact us!&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="habla_expanded_div" style="display: none;"&gt;&lt;div id="habla_middle_div"&gt;&lt;div id="habla_middle_wrapper_div"&gt;&lt;div id="habla_conversation_div" style="height: 150px; overflow: hidden; display: none;" class="hbl_panel habla_conversation_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg hbl_pal_main_bg   habla_conversation_message_on "&gt;&lt;span id="hbl_body_message"&gt;Questions about features, plans and packages? &lt;/span&gt;&lt;/div&gt;&lt;div id="habla_offline_message_sent_div" style="display: none;" class="hbl_panel habla_offline_message_sent_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg "&gt;Thanks for your message!  We'll get back to you shortly.&lt;/div&gt;&lt;div id="habla_offline_message_div" style="display: block;" class="hbl_panel habla_offline_message_div hbl_pal_control_border hbl_pal_main_fg "&gt;&lt;span id="habla_offline_message_span"&gt;We're not around, but we'd love to chat another time.&lt;/span&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_name_input" name="habla_name_input" style="height: 20px; display: block;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="click here and type your Name"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_offline_email_input" name="habla_offline_email_input" style="height: 20px; display: block;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="click here and type your Email"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_offline_body_input" name="habla_offline_body_input" style="height: 65px; display: block;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="We're not around but we still want to hear from you!  Leave us a note:"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;span id="habla_offline_error_span" class="habla_offline_error_span "&gt;&lt;/span&gt;&lt;input type="submit" id="habla_offline_submit_input" name="habla_offline_submit_input" class="habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg " value="Send" style="display: block;" /&gt;&lt;div id="habla_offline_clear_div" class="clear_style "&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="habla_pre_chat_div" style="display: none; height: 150px;" class="hbl_panel habla_pre_chat_div hbl_pal_main_height hbl_pal_main_fg "&gt;&lt;span id="habla_pre_chat_span"&gt;Hi, I am around, click 'start chatting' to contact me.&lt;/span&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_pre_chat_name_input" name="habla_pre_chat_name_input" style="height: 20px; line-height: 20px;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="click here and type your Name"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_pre_chat_email_input" name="habla_pre_chat_email_input" style="height: 20px; line-height: 20px;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="click here and type your Email"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;div class="hbl_txt_wrapper" style="display: none;"&gt;&lt;textarea id="habla_pre_chat_phone_input" name="habla_pre_chat_phone_input" style="height: 20px; line-height: 20px; display: none;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="click here and type your Phone"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;span id="habla_pre_chat_error_span"&gt;&lt;/span&gt;&lt;input type="submit" id="habla_pre_chat_submit_input" name="habla_pre_chat_submit_input" class="habla_pre_chat_form_field habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg " value="Click here to start chatting" /&gt;&lt;div id="habla_pre_chat_clear_div" class="clear_style "&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;form id="habla_chatform_form" action="#" method="GET" autocomplete="off" class="habla_chatform_form " style="display: none;"&gt;&lt;div id="habla_input_div" class="habla_input_div "&gt;&lt;div class="hbl_txt_wrapper"&gt;&lt;textarea id="habla_wcsend_input" name="habla_wcsend_input" size="undefined" style="line-height: 20px; height: 20px; display: none;" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="Type here and hit enter to chat" disabled="disabled"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;/div&gt;&lt;/form&gt;&lt;/div&gt;&lt;div style="padding: 3px 0px 5px ! important; font-family: helvetica,sans-serif; text-align: center; text-transform: uppercase; font-size: 9px; letter-spacing: 2px; font-weight: bold; color: rgb(170, 170, 170) ! important; clear: both;"&gt;&lt;span style="display:none"&gt;&lt;a id="hblink9" style="font-family: helvetica, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: #e75917 !important;"&gt;&lt;/a&gt;http://www.olark.com&lt;/span&gt;Powered By &lt;a target="_blank" id="hblink99" href="http://www.olark.com/welcome/?rid=3998-799-10-8749&amp;amp;rid=3998-799-10-8749&amp;amp;utm_medium=widget&amp;amp;utm_campaign=powered_by&amp;amp;utm_source=3998-799-10-8749" style="font-family: helvetica, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: #e75917 !important;" rel="nofollow"&gt;Olark&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="habla_closed_div" style="display: none;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20151202 12:25:36.251" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20151202 12:25:36.251" starttime="20151202 12:25:35.702"></status>
+<msg timestamp="20151202 13:40:15.954" level="INFO">Current page contains element 'name=username'.</msg>
+<status status="PASS" endtime="20151202 13:40:15.954" starttime="20151202 13:40:15.884"></status>
 </kw>
-<msg timestamp="20151202 12:25:36.252" level="FAIL">Page should have contained element 'id=username' but did not</msg>
-<status status="FAIL" endtime="20151202 12:25:36.253" starttime="20151202 12:25:34.621"></status>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>name=password</arg>
+</arguments>
+<msg timestamp="20151202 13:40:16.010" level="INFO">Current page contains element 'name=password'.</msg>
+<status status="PASS" endtime="20151202 13:40:16.011" starttime="20151202 13:40:15.955"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>anonymous</arg>
+</arguments>
+<msg timestamp="20151202 13:40:16.013" level="INFO">Typing text 'anonymous' into text field 'name=username'</msg>
+<status status="PASS" endtime="20151202 13:40:16.442" starttime="20151202 13:40:16.012"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>secret</arg>
+</arguments>
+<msg timestamp="20151202 13:40:16.444" level="INFO">Typing text 'secret' into text field 'name=password'</msg>
+<status status="PASS" endtime="20151202 13:40:17.112" starttime="20151202 13:40:16.443"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg timestamp="20151202 13:40:17.114" level="INFO">Clicking button 'id=submit'.</msg>
+<status status="PASS" endtime="20151202 13:40:17.418" starttime="20151202 13:40:17.113"></status>
 </kw>
 <kw type="teardown" name="Close test browser">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -219,30 +80,30 @@ k=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=!0
 <arg>${SUITE_NAME} | ${TEST_NAME}</arg>
 <arg>${TEST_STATUS}</arg>
 </arguments>
-<msg timestamp="20151202 12:25:36.642" level="INFO">SauceOnDemandSessionID=0c233bf17af14f24aaefc7ee41f06f85 job-name=Sample Test | Example of connecting to Sauce via Robot Framework</msg>
-<status status="PASS" endtime="20151202 12:25:36.643" starttime="20151202 12:25:36.255"></status>
+<msg timestamp="20151202 13:40:17.525" level="INFO">SauceOnDemandSessionID=d547ed63d0f44a829cbb536d091e3581 job-name=Sample Test | Example of connecting to Sauce via Robot Framework</msg>
+<status status="PASS" endtime="20151202 13:40:17.525" starttime="20151202 13:40:17.421"></status>
 </kw>
-<status status="PASS" endtime="20151202 12:25:36.643" starttime="20151202 12:25:36.254"></status>
+<status status="PASS" endtime="20151202 13:40:17.526" starttime="20151202 13:40:17.419"></status>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20151202 12:25:36.891" starttime="20151202 12:25:36.644"></status>
+<status status="PASS" endtime="20151202 13:40:17.706" starttime="20151202 13:40:17.526"></status>
 </kw>
-<status status="PASS" endtime="20151202 12:25:36.891" starttime="20151202 12:25:36.253"></status>
+<status status="PASS" endtime="20151202 13:40:17.707" starttime="20151202 13:40:17.418"></status>
 </kw>
-<status status="FAIL" endtime="20151202 12:25:36.892" critical="yes" starttime="20151202 12:25:24.582">Page should have contained element 'id=username' but did not</status>
+<status status="PASS" endtime="20151202 13:40:17.707" critical="yes" starttime="20151202 13:40:11.269"></status>
 </test>
-<status status="FAIL" endtime="20151202 12:25:36.893" starttime="20151202 12:25:24.469"></status>
+<status status="PASS" endtime="20151202 13:40:17.708" starttime="20151202 13:40:11.149"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Sample Test" pass="0">Sample Test</stat>
+<stat fail="0" id="s1" name="Sample Test" pass="1">Sample Test</stat>
 </suite>
 </statistics>
 <errors>
