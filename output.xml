@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151202 13:40:11.147" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<robot generated="20151202 13:40:11.146" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/kristianmeier/Desktop/dev/Python-Robot-Selenium-master/sample_test.robot" id="s1" name="Sample Test">
 <test id="s1-t1" name="Example of connecting to Sauce via Robot Framework">
 <kw type="setup" name="Open test browser">
@@ -11,34 +11,34 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${CAPABILITIES}</arg>
 </arguments>
-<msg timestamp="20151202 13:40:11.271" level="INFO">Opening browser 'chrome' to base url 'about:' through remote server at 'http://kristianmeiersl:5654145f-77f1-49aa-94d2-428831e575a9@ondemand.saucelabs.com:80/wd/hub'</msg>
-<status status="PASS" endtime="20151202 13:40:14.347" starttime="20151202 13:40:11.270"></status>
+<msg timestamp="20151202 13:40:11.269" level="INFO">Opening browser 'firefox' to base url 'about:' through remote server at 'http://kristianmeiersl:5654145f-77f1-49aa-94d2-428831e575a9@ondemand.saucelabs.com:80/wd/hub'</msg>
+<status status="PASS" endtime="20151202 13:40:21.516" starttime="20151202 13:40:11.268"></status>
 </kw>
-<status status="PASS" endtime="20151202 13:40:14.348" starttime="20151202 13:40:11.270"></status>
+<status status="PASS" endtime="20151202 13:40:21.517" starttime="20151202 13:40:11.267"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>https://saucelabs.com/login</arg>
 </arguments>
-<msg timestamp="20151202 13:40:14.349" level="INFO">Opening url 'https://saucelabs.com/login'</msg>
-<status status="PASS" endtime="20151202 13:40:15.883" starttime="20151202 13:40:14.349"></status>
+<msg timestamp="20151202 13:40:21.518" level="INFO">Opening url 'https://saucelabs.com/login'</msg>
+<status status="PASS" endtime="20151202 13:40:23.156" starttime="20151202 13:40:21.517"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
 <arg>name=username</arg>
 </arguments>
-<msg timestamp="20151202 13:40:15.954" level="INFO">Current page contains element 'name=username'.</msg>
-<status status="PASS" endtime="20151202 13:40:15.954" starttime="20151202 13:40:15.884"></status>
+<msg timestamp="20151202 13:40:23.322" level="INFO">Current page contains element 'name=username'.</msg>
+<status status="PASS" endtime="20151202 13:40:23.323" starttime="20151202 13:40:23.157"></status>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
 <arg>name=password</arg>
 </arguments>
-<msg timestamp="20151202 13:40:16.010" level="INFO">Current page contains element 'name=password'.</msg>
-<status status="PASS" endtime="20151202 13:40:16.011" starttime="20151202 13:40:15.955"></status>
+<msg timestamp="20151202 13:40:23.666" level="INFO">Current page contains element 'name=password'.</msg>
+<status status="PASS" endtime="20151202 13:40:23.666" starttime="20151202 13:40:23.324"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -46,8 +46,8 @@
 <arg>name=username</arg>
 <arg>anonymous</arg>
 </arguments>
-<msg timestamp="20151202 13:40:16.013" level="INFO">Typing text 'anonymous' into text field 'name=username'</msg>
-<status status="PASS" endtime="20151202 13:40:16.442" starttime="20151202 13:40:16.012"></status>
+<msg timestamp="20151202 13:40:23.668" level="INFO">Typing text 'anonymous' into text field 'name=username'</msg>
+<status status="PASS" endtime="20151202 13:40:24.457" starttime="20151202 13:40:23.667"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -55,16 +55,16 @@
 <arg>name=password</arg>
 <arg>secret</arg>
 </arguments>
-<msg timestamp="20151202 13:40:16.444" level="INFO">Typing text 'secret' into text field 'name=password'</msg>
-<status status="PASS" endtime="20151202 13:40:17.112" starttime="20151202 13:40:16.443"></status>
+<msg timestamp="20151202 13:40:24.458" level="INFO">Typing text 'secret' into text field 'name=password'</msg>
+<status status="PASS" endtime="20151202 13:40:24.974" starttime="20151202 13:40:24.458"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>id=submit</arg>
 </arguments>
-<msg timestamp="20151202 13:40:17.114" level="INFO">Clicking button 'id=submit'.</msg>
-<status status="PASS" endtime="20151202 13:40:17.418" starttime="20151202 13:40:17.113"></status>
+<msg timestamp="20151202 13:40:24.975" level="INFO">Clicking button 'id=submit'.</msg>
+<status status="PASS" endtime="20151202 13:40:25.668" starttime="20151202 13:40:24.974"></status>
 </kw>
 <kw type="teardown" name="Close test browser">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -80,20 +80,20 @@
 <arg>${SUITE_NAME} | ${TEST_NAME}</arg>
 <arg>${TEST_STATUS}</arg>
 </arguments>
-<msg timestamp="20151202 13:40:17.525" level="INFO">SauceOnDemandSessionID=d547ed63d0f44a829cbb536d091e3581 job-name=Sample Test | Example of connecting to Sauce via Robot Framework</msg>
-<status status="PASS" endtime="20151202 13:40:17.525" starttime="20151202 13:40:17.421"></status>
+<msg timestamp="20151202 13:40:25.733" level="INFO">SauceOnDemandSessionID=1dff47b9979c4f12bbcac2a94f9c1241 job-name=Sample Test | Example of connecting to Sauce via Robot Framework</msg>
+<status status="PASS" endtime="20151202 13:40:25.734" starttime="20151202 13:40:25.671"></status>
 </kw>
-<status status="PASS" endtime="20151202 13:40:17.526" starttime="20151202 13:40:17.419"></status>
+<status status="PASS" endtime="20151202 13:40:25.734" starttime="20151202 13:40:25.669"></status>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20151202 13:40:17.706" starttime="20151202 13:40:17.526"></status>
+<status status="PASS" endtime="20151202 13:40:25.821" starttime="20151202 13:40:25.735"></status>
 </kw>
-<status status="PASS" endtime="20151202 13:40:17.707" starttime="20151202 13:40:17.418"></status>
+<status status="PASS" endtime="20151202 13:40:25.822" starttime="20151202 13:40:25.668"></status>
 </kw>
-<status status="PASS" endtime="20151202 13:40:17.707" critical="yes" starttime="20151202 13:40:11.269"></status>
+<status status="PASS" endtime="20151202 13:40:25.822" critical="yes" starttime="20151202 13:40:11.267"></status>
 </test>
-<status status="PASS" endtime="20151202 13:40:17.708" starttime="20151202 13:40:11.149"></status>
+<status status="PASS" endtime="20151202 13:40:25.823" starttime="20151202 13:40:11.148"></status>
 </suite>
 <statistics>
 <total>
